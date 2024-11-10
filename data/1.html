@@ -1,0 +1,140 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency wakeup system</title>
+    
+    <script src="stuff.js" defer=""></script>
+    <style>
+        .question-number {
+            
+            width: 30px; /* Fixed width for the number */
+            text-align: left; /* Right align text to keep numbers right aligned */
+            margin-right: 10px; /* Space between the number and the question */
+        }
+
+        /* Clear float style */
+        .question {
+            overflow: hidden; /* Clear float */
+           text-align: center;
+        }
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #fff;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styles */
+        header {
+            width: 100%; /* Full width */
+            text-align: center; /* Center text horizontally */
+            font-family: 'Impact', bold; /* Cursive font */
+            font-size: 2.5em; /* Larger font size */
+            padding: 20px 0; /* Padding top and bottom */
+            margin: 0; /* Reset margin */
+        }
+
+
+        /* Card styling */
+        .question {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px; /* Maximum width */
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Form element styling */
+        form {
+            display: grid;
+            grid-template-columns: 1fr auto; /* Two-column layout */
+            gap: 10px; /* Spacing between grid items */
+            align-items: center; /* Aligns items vertically */
+        }
+
+        form p {
+            margin: 0;
+            display: flex;
+            align-items: center; /* Aligns items within paragraph vertically */
+        }
+
+        form label, form p {
+            justify-content: space-between; /* Distributes space evenly */
+            text-align: left;
+        }
+
+        form input, form select, form button {
+            margin: 0 5px; /* Margin for spacing */
+        }
+
+        /* Style adjustments for inputs and selects */
+        input[type="checkbox"], select {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd; /* Border color */
+            border-radius: 4px; /* Border radius for rounded corners */
+            padding: 5px; /* Padding for inputs */
+        }
+
+        /* Button styles */
+        button {
+            background: #fff;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a777e3;
+        }
+
+        button:active {
+            background-color: rgb(117, 57, 191);
+        }
+
+        /* Clearfix for the float */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        #an{
+                 text-align: center; 
+        }
+        #an1{
+                 text-align: center; 
+        }
+        .bj{
+            margin-left: 26px;
+        }
+    </style>
+</head>
+<body>
+
+<header>Last-hope alarm</header>
+<div id="esp32time">
+
+</div>
+<div id='time'></div>
+    <div class="question" style="">
+        HOW MANY MINUTES WILL YOU SLEEP <br><p style="text-align: center;margin-bottom: 0px;"><input name="country7" id="time3m" style="margin-bottom: 16px;"><br><button id="s3" type="submit">submit</button></p>
+    </div>
+</div>
+        
+    
+
+</body>

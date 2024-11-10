@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Downloads/SemesterIII/IED/ESP32_Async_Web_Server"
+		},
+		{
+			"name": "Baller",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Baller",
+		"files.associations": {
+			"*.tcc": "cpp"
+		}
+	}
+}
